@@ -1,0 +1,331 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+// null file
+@import "nullstyle.scss";
+
+.wrapper {
+   width: 95%;
+   max-width: 1170px;
+   margin: 0 auto;
+}
+.header {
+   margin-bottom: 60px;
+   .header-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+         width: 58px;
+         height: 58px;
+      }
+      .header-burger {
+         display: none;
+      }
+      .header-links {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         .header-item {
+            margin-right: 35px;
+         }
+         .header-link {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+            color: #ffffff;
+         }
+         .header-link:hover {
+            background: linear-gradient(180deg, rgba(230, 234, 34, 1) 0%, rgba(34, 202, 28, 0.74) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #0b2349;
+            display: table;
+         }
+         .header-item:last-child {
+            margin-right: 0;
+         }
+      }
+   }
+}
+.container {
+   width: 95%;
+   margin: auto;
+   margin-bottom: 100px;
+}
+.main-block {
+   .main-block-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .description-subtitle {
+         font-weight: bold;
+         font-size: 18px;
+         line-height: 24px;
+         color: rgba(255, 255, 255, 0.5);
+      }
+      .description-title {
+         font-family: "Montserrat";
+         font-weight: bold;
+         font-size: 64px;
+         line-height: 78px;
+         color: #ffffff;
+         margin-top: 14px;
+         margin-bottom: 70px;
+      }
+      .main-block-button {
+         width: 190px;
+         height: 35px;
+         background: linear-gradient(180deg, #e6ea22 0%, rgba(31, 202, 38, 0.74) 100%);
+         border-radius: 48px;
+         font-family: Montserrat;
+         font-weight: bold;
+         font-size: 18px;
+         line-height: 22px;
+      }
+      .main-block-button:hover {
+         box-shadow: 0 0 20px rgba(31, 202, 38, 0.74); /* Параметры тени */
+         transition-duration: 600ms;
+      }
+   }
+   .main-block-img {
+      max-width: 345px;
+      max-height: 466px;
+   }
+}
+.section-heading {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   margin-bottom: 50px;
+   .hr {
+      border: none;
+      background-color: #ffffff;
+      color: #ffffff; /* for IE6-7 */
+      width: 160px;
+      height: 1px;
+   }
+   .section-title {
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      color: #ffffff;
+      margin-left: 40px;
+   }
+}
+.about-me-block {
+   margin-bottom: 100px;
+   .about-me-content {
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      margin-bottom: 80px;
+      .about-me-text {
+         // убрать на 1024px
+         margin-top: 50px;
+         font-size: 18px;
+         line-height: 24px;
+         color: #ffffff;
+         margin-right: 130px;
+         .paragraph {
+            margin-bottom: 20px;
+         }
+      }
+      .about-me-img {
+         max-width: 280px;
+         max-height: 420px;
+      }
+   }
+   .my-specialties {
+      width: 95%;
+      margin: 0 auto;
+      .specialities-cards {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         .specialities-card {
+            margin-right: 100px;
+            display: flex;
+            .card-icon {
+               width: 40px;
+               height: 40px;
+               margin-right: 20px;
+            }
+            .card-content {
+               display: flex;
+               align-items: flex-start;
+               flex-direction: column;
+               .card-title {
+                  font-weight: bold;
+                  font-size: 18px;
+                  line-height: 21px;
+                  color: #ffffff;
+                  margin-bottom: 20px;
+               }
+               .card-description {
+                  font-size: 12px;
+                  line-height: 14px;
+                  color: rgba(255, 249, 249, 0.65);
+               }
+            }
+         }
+         .specialities-card:last-child {
+            margin-right: 0;
+         }
+      }
+   }
+}
+.portfolio {
+   //--!!!!!!!!!!!!!!!!!!!!!!
+   //--!!!!!!!!!!!!!!!!!!!!!!
+   //--!!!!!!!!!!!!!!!!!!!!!!
+   //--!!!!!!!!!!!!!!!!!!!!!!
+}
+.price {
+   .price-cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .price-card {
+         width: 25%;
+         height: auto;
+         border: 1px solid #ffffff;
+         border-radius: 43px;
+         -webkit-border-radius: 43px;
+         -moz-border-radius: 43px;
+         -ms-border-radius: 43px;
+         -o-border-radius: 43px;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         text-align: center;
+         color: #fff;
+         .price-title {
+            margin-top: 45px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 40px;
+         }
+         .price-cost {
+            font-size: 25px;
+            line-height: 33px;
+            margin-bottom: 72px;
+         }
+         .price-time {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 10px;
+         }
+         .price-terms {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 17px;
+         }
+         .price-button {
+            width: 100%;
+            border-top: 1px solid #ffffff;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 37px;
+            background-color: transparent;
+            color: #fff;
+            border-radius: 0 0 43px 43px;
+            -webkit-border-radius: 0 0 43px 43px;
+            -moz-border-radius: 0 0 43px 43px;
+            -ms-border-radius: 0 0 43px 43px;
+            -o-border-radius: 0 0 43px 43px;
+         }
+         .price-button:hover {
+            background-color: #ffffff;
+            color: #000000;
+            transition-duration: 600ms;
+         }
+      }
+   }
+}
+.testimonials {
+   // ---!!!!!!!!!!!!!!!!!!
+   // ---!!!!!!!!!!!!!!!!!!
+   // ---!!!!!!!!!!!!!!!!!!
+   // ---!!!!!!!!!!!!!!!!!!
+}
+.contacts {
+   color: #fff;
+   .contacts-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .contacts-info {
+         .contacts-cards {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .contacts-card {
+               flex-basis: 50%;
+               display: flex;
+               align-items: center;
+               flex-wrap: wrap;
+               margin-bottom: 90px;
+               .contacts-icon {
+                  flex-basis: 100%;
+                  width: 23px;
+                  height: 23px;
+                  margin-right: 15px;
+               }
+               .contacts-card-content {
+                  flex-basis: 100%;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: column;
+                  text-align: center;
+                  .contacts-card-title {
+                     font-weight: bold;
+                     font-size: 14px;
+                     line-height: 17px;
+                     color: #ffffff;
+                     margin-bottom: 20px;
+                  }
+                  .contacts-card-description {
+                     font-size: 14px;
+                     line-height: 17px;
+                     color: #ffffff;
+                  }
+               }
+            }
+            .specialities-card:last-child {
+               margin-right: 0;
+            }
+         }
+      }
+      .contacts-map {
+         width: 620px;
+         height: 432px;
+         .map {
+            width: 620px;
+            height: 432px;
+            opacity: 0.8;
+         }
+      }
+   }
+}
+// -webkit-text-stroke: 1px;
+// -webkit-text-stroke-color: blue;
+.contact-me {
+   .contact-me-title {
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      color: transparent;
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: #ffffff;
+   }
+}
